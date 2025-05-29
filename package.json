@@ -4,16 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "dev": "ts-node-dev index.ts",
-  "build": "esbuild src/sever.ts --platform=node --bundle --format=esm --outdir=dist --external:express",
-  "start": "node dist/sever.js"
+    "dev": "ts-node-dev index.ts",
+    "build": "esbuild src/sever.ts --platform=node --bundle --format=esm --outdir=dist --external:express",
+    "start": "node dist/sever.js"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.24.1",
+    "express": "^5.1.0",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.23.0",
-    "@tanstack/react-query": "^5.24.1"
+    "react-router-dom": "^6.23.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
